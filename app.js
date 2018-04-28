@@ -4,11 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var compression = require('compression');
 
 var app = express();
-
-app.use(compression()); //Compress all routes
 
 var index = require('./routes/index');
 var users = require('./routes/users');
