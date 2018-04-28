@@ -10,6 +10,8 @@ var users = require('./routes/users');
 
 var app = express();
 
+app.use(compression()); //Compress all routes
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -42,5 +44,36 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+//Import the mongoose module
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+
+var ElokuvatSchema = new Schema(
+    {
+    elokuvan_nimi: {type: String},
+    nauttelijat: {type: Array},
+    kuva: { type: String },
+    rotten_tomatoes_pisteet: { type: Number },
+    sertifikaatti: { type: String },
+    kuvaus: { type: String },
+    oma_arvio: { type: String },
+    }
+  );
+
+  // Compile model from schema
+var ElokuvatModel = mongoose.model('ElokuvatModel', ElokuvatSchema );
+
+//Set up default mongoose connection
+var mongoDB = 'mongodb://127.0.0.1/Elokuvat_database';
+mongoose.connect(mongoDB);
+// Get Mongoose to use the global promise library
+mongoose.Promise = global.Promise;
+//Get the default connection
+var db = mongoose.connection;
+
+//Bind connection to error event (to get notification of connection errors)
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 module.exports = app;
