@@ -1,9 +1,9 @@
 extends layout
 
 block content
-  h1= Hyvi&auml; elokuvia
+  h1= Good movies
   p Welcome to #{title}
   form(action='/' method='post')
-  label(for='team_name') Sy&ouml;t&auml; elokuvan nimi: 
+  label(for='team_name') Give the name of the movie: 
   input#elokuvan_nimi(type='text' name='nimi_kenttä' value='Elokuvan nimi.')
-  input(type='submit' value='Lähetä')
+  input(type='submit' value='Send')
