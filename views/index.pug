@@ -3,7 +3,7 @@ extends layout
 block content
   h1= Good movies
   p Welcome to #{title}
-  form(action='/team_name_url/', method='post')
-    label(for='team_name') Enter name 
-      input#team_name(type='text', name='name_field', value='Default name for team.')
-      input(type='submit', value='OK')
+  form(method='post' action='/')
+    label(for='name') Name:
+    input(type='text', placeholder='Movie title' name='name')
+    button(type='submit') Send
