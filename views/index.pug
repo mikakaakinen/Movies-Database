@@ -3,7 +3,7 @@ extends layout
 block content
   h1= Good movies
   p Welcome to #{title}
- form(action='/', method='post')
-  label(for='team_name') Syötä elokuvan nimi: 
-  input#elokuvan_nimi(type='text', name='nimi_kenttä', value='Elokuvan nimi.')
-  input(type='submit', value='Lähetä')
+  form(action='/', method='post')
+    label(for='team_name') Syötä elokuvan nimi: 
+    input#elokuvan_nimi(type='text', name='nimi_kenttä', value='Elokuvan nimi.')
+    input(type='submit', value='Lähetä')
