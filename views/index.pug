@@ -3,6 +3,7 @@ extends layout
 block content
   h1= Good movies
   p Welcome to #{title}
-  form#formGiveMovie(name="givemovie",method="post",action="/")
-    input#inputUserName(type="text", placeholder="Give movie name", name="username")
-    button#btnSubmit(type="submit") submit
+  form(action='/team_name_url/', method='post')
+    label(for='team_name') Enter name: 
+      input#team_name(type='text', name='name_field', value='Default name for team.')
+      input(type='submit', value='OK')
