@@ -43,9 +43,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', function (req, res) {
-  res.send('hello world');
+app.use(function (req, res) {
+  res.setHeader('Content-Type', 'text/plain');
+  res.write('you posted:\n');
+  res.end(JSON.stringify(req.body, null, 2));
 });
 
 //Import the mongoose module
