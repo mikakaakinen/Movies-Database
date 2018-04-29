@@ -43,9 +43,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.get('/', function (req, res) {
-	console.log("Received variable");
-});
+console.log("Received variable");
 
 //Import the mongoose module
 var mongoose = require('mongoose');
