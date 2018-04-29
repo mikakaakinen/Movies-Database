@@ -44,7 +44,7 @@ app.use(function(err, req, res, next) {
 });
 
 app.get('/',function (req, res) {
-  res.render('first_view');
+  res.send('Hello world!');
 });
 
 //Import the mongoose module
