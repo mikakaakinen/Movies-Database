@@ -43,7 +43,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-res.send('<p>some html</p>');
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', function (req, res) {
+  res.send('hello world');
+});
 
 //Import the mongoose module
 var mongoose = require('mongoose');
