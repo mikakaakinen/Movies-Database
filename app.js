@@ -7,11 +7,6 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-app.post('/', function (req, res) {
-	var post=req.body.nimi_kentta;
-	console.log("Received variable : "+ post);
-});
-
 var index = require('./routes/index');
 var users = require('./routes/users');
 
@@ -29,6 +24,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+
+app.post('/', function (req, res) {
+	var post=req.body.nimi_kentta;
+	console.log("Received variable : "+ post);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
