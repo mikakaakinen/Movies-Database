@@ -3,7 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  p Welcome again
   form(action='/team_name_url/' method='post')
   label(for='team_name') Enter name: 
   input#team_name(type='text' name='name_field' value='Default name for team.')
