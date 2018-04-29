@@ -7,10 +7,6 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-app.get('/',function (req, res) {
-  res.render('index');
-});
-
 var index = require('./routes/index');
 var users = require('./routes/users');
 
