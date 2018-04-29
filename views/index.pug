@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  form(action='/' method='post')
+  form(action='/' method='get')
   label(for='elokuvan_nimi') Sy&ouml;t&auml; elokuvan nimi: 
   input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
   input(type='submit' value='OK')
