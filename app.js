@@ -7,6 +7,11 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+app.post('/', function (req, res) {
+	var post=req.body.nimi_kentta;
+	console.log("Received variable : "+ post);
+});
+
 var index = require('./routes/index');
 var users = require('./routes/users');
 
