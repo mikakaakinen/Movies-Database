@@ -47,8 +47,8 @@ app.use(function(err, req, res, next) {
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb://127.0.0.1/Elokuvat_database';
-mongoose.connect(mongoDB);
+
+mongoose.connect('mongodb://localhost/Elokuvat_database');
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 //Get the default connection
