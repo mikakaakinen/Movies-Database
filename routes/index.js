@@ -6,4 +6,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mikan Express Page' });
 });
 
+var result_from_mongo = [];
+
+router.post('/', function(req, res, next) {
+var query = req.body.nimi_kentta; 
+db.collection("Elokuvat kokoelma").find(query).toArray(function(err, docs) {
+    if (err) throw err;
+    //Push result onto results_array
+    result_from_mongo.push(docs); 
+    // renders index.pug
+    res.render('index', {'results': 'Hey' });
+  });
+});
+
 module.exports = router;
