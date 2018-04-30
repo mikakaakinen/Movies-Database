@@ -46,23 +46,6 @@ app.use(function(err, req, res, next) {
 //Import the mongoose module
 var mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
-
-var ElokuvatSchema = new Schema(
-    {
-    elokuvan_nimi: {type: String},
-    nauttelijat: {type: Array},
-    kuva: { type: String },
-    rotten_tomatoes_pisteet: { type: Number },
-    sertifikaatti: { type: String },
-    kuvaus: { type: String },
-    oma_arvio: { type: String },
-    }
-  );
-
-  // Compile model from schema
-var ElokuvatModel = mongoose.model('ElokuvatModel', ElokuvatSchema );
-
 //Set up default mongoose connection
 var mongoDB = 'mongodb://127.0.0.1/Elokuvat_database';
 mongoose.connect(mongoDB);
