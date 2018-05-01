@@ -48,7 +48,12 @@ var mongoose = require('mongoose');
 
 //Set up default mongoose connection
 
-mongoose.connect('mongodb://localhost/Elokuvat_database');
+mongoose.connect('mongodb://localhost/Elokuvat_database', function (error) {
+      if (error) throw error; // Handle failed connection
+      console.log('conn ready:  '+mongoose.connection.readyState);
+      done();
+    });
+
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 //Get the default connection
