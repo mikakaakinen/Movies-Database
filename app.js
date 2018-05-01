@@ -43,23 +43,23 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//Import the mongoose module
-var mongoose = require('mongoose');
-
-//Set up default mongoose connection
-
-mongoose.connect('mongodb://localhost/Elokuvat_database', function (error) {
-      if (error) throw error; // Handle failed connection
-      console.log('conn ready:  '+mongoose.connection.readyState);
-      done();
-    });
-
-// Get Mongoose to use the global promise library
-mongoose.Promise = global.Promise;
-//Get the default connection
-var db = mongoose.connection;
-
-//Bind connection to error event (to get notification of connection errors)
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+ 
+// Connection URL
+const url = 'mongodb://localhost:27017';
+ 
+// Database Name
+const dbName = 'Elokuvat_database';
+ 
+// Use connect method to connect to the server
+MongoClient.connect(url, function(err, client) {
+  assert.equal(null, err);
+  console.log("Connected successfully to server");
+ 
+  const db = client.db(dbName);
+ 
+  client.close();
+});
 
 module.exports = app;

@@ -15,7 +15,7 @@ db.collection("Elokuvat kokoelma").find(query).toArray(function(err, docs) {
     //Push result onto results_array
     result_from_mongo.push(docs); 
     // renders index.pug
-    res.render('index', {'results': 'Hey' });
+    res.render('index', {'results': 'Hey', title: 'Arin Express Page' });
   });
 });
 
