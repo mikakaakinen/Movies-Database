@@ -68,6 +68,6 @@ db.connection.on("error", function() {
 });
 
 // Get Mongoose to use the global promise library
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 
 module.exports = app;
