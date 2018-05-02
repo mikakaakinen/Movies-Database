@@ -44,17 +44,30 @@ app.use(function(err, req, res, next) {
 });
 
 //Import the mongoose module
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
-//Set up default mongoose connection
+var database = {
+    url: "ds014808.mlab.com:14808",
+    name: "elokuvat_database",
+    user: "MikaKaakinen",
+    password: "o5lglNOWuF",
+};
 
-mongoose.connect('mongodb://MikaKaakinen:5O5bemm0k1Ty6mW@ds014808.mlab.com:14808/elokuvat_database');
+var loginCredentials = database.user + ":" + database.password;
+
+var db = mongoose;
+
+db.connect("mongodb://" + loginCredentials + "@" + database.url + "/" + database.name);
+
+db.connection.on("open", function() {
+    console.log("connection to database done!");
+});
+
+db.connection.on("error", function() {
+    console.log("error");
+});
+
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
-//Get the default connection
-var db = mongoose.connection;
-
-//Bind connection to error event (to get notification of connection errors)
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 module.exports = app;
