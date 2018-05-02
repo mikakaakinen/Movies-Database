@@ -57,7 +57,7 @@ var loginCredentials = database.user + ":" + database.password;
 
 var db = mongoose;
 
-db.connect("mongodb://" + loginCredentials + "@" + database.url + "/" + database.name);
+db.connect("mongodb://" + loginCredentials + "@" + database.url + "/" + database.name + "?authSource=elokuvat_database&w=1");
 
 db.connection.on("open", function() {
     console.log("connection to database done!");
