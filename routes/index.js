@@ -20,7 +20,7 @@ router.post('/', function(req, res, next) {
       resultArray.push(doc);
     }, function() {
       db.close();
-      res.render('index', {results: resultArray});
+      res.render('index', {title: 'Arin Express Page' });
     });
   });
 });
