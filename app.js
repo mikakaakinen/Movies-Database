@@ -48,7 +48,7 @@ var mongoose = require('mongoose');
 
 //Set up default mongoose connection
 
-mongoose.connect('mongodb://mika.kaakinen@gmail.com:vzFoHOkyWDMJTFZY6AcO@ds014808.mlab.com:14808/elokuvat_database');
+mongoose.connect('mongodb://MikaKaakinen:vzFoHOkyWDMJTFZY6AcO@ds014808.mlab.com:14808/elokuvat_database');
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 //Get the default connection
