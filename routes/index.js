@@ -1,21 +1,27 @@
 var express = require('express');
 var router = express.Router();
+var mongo = require('mongodb').MongoClient;
+var assert = require('assert');
+
+var url = 'mongodb://MikaKaakinen:o5lglNOWuF@ds014808.mlab.com:14808/elokuvat_database';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mikan Express Page' });
 });
 
-var result_from_mongo = [];
-
 router.post('/', function(req, res, next) {
-var query = req.body.nimi_kentta; 
-db.collection("elokuvat_kokoelma").find(query).toArray(function(err, docs) {
-    if (err) throw err;
-    //Push result onto results_array
-    result_from_mongo.push(docs); 
-    // renders index.pug
-    res.render('index', {results:'Gay marriage'});
+  var resultArray = [];
+  mongo.connect(url, function(err, db) {
+    assert.equal(null, err);
+    var cursor = db.collection('elokuvat_kokoelma').find();
+    cursor.forEach(function(doc, err) {
+      assert.equal(null, err);
+      resultArray.push(doc);
+    }, function() {
+      db.close();
+      res.render('index', {results: resultArray});
+    });
   });
 });
 
