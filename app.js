@@ -45,8 +45,10 @@ app.use(function(err, req, res, next) {
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = "mongodb://MikaKaakinen:o5lglNOWuF@ds014808.mlab.com:14808/elokuvat_database/admin?ssl=true";
-mongoose.connect(mongoDB);
+var mongoDB = "mongodb://MikaKaakinen:o5lglNOWuF@ds014808.mlab.com:14808/elokuvat_database";
+mongoose.connect(mongoDB, {
+  useMongoClient: true
+});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
