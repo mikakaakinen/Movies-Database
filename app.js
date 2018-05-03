@@ -46,21 +46,13 @@ app.use(function(err, req, res, next) {
 //Set up mongoose connection
 var mongoose = require('mongoose');
 var mongoDB = "mongodb://AriKaakinen:QB7I2tIIubRpzbvzypyN@ds014808.mlab.com:14808/elokuvat_database";
-mongoose.connect(mongoDB, {
-  useMongoClient: true
-});
+mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
 db.on('open', function() {
     console.log("connection to database done!");
 });
-
-db.on("error", function() {
-    console.log("error");
-});
-
 var promise1 = new Promise(function(resolve, reject) {
   throw 'Uh-oh!';
 });
