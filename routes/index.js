@@ -1,9 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var mongo = require('mongodb').MongoClient;
-var assert = require('assert');
-
-var url = 'mongodb://MikaKaakinen:o5lglNOWuF@ds014808.mlab.com:14808/elokuvat_database';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
