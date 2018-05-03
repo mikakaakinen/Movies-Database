@@ -51,7 +51,7 @@ mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.on('open', function() {
-    console.log("connection to database done!");
+    console.log("Connection to database done!");
 });
 var promise1 = new Promise(function(resolve, reject) {
   throw 'Uh-oh!';
