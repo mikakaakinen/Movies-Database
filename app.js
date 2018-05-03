@@ -70,14 +70,14 @@ db.connection.on("error", function() {
 //Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 
-var p = new Promise( (resolve, reject) => {
-    reject( Error("Error!") );
-  } );
-  
-  p.then(value => {console.log(value);});
-  
-  process.on('unhandledRejection', e => {
-    console.error(e);
-  });
+var promise1 = new Promise(function(resolve, reject) {
+  throw 'Uh-oh!';
+});
+
+promise1.catch(function(error) {
+  console.log(error);
+});
+// expected output: Uh-oh!
+
 
 module.exports = app;
