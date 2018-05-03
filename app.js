@@ -45,7 +45,7 @@ app.use(function(err, req, res, next) {
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = "mongodb://MikaKaakinen:o5lglNOWuF@ds014808.mlab.com:14808/elokuvat_database";
+var mongoDB = "mongodb://AriKaakinen:QB7I2tIIubRpzbvzypyN@ds014808.mlab.com:14808/elokuvat_database";
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });
