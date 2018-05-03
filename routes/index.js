@@ -1,5 +1,5 @@
 // if our user.js file is at app/models/user.js
-var User = require('./models/user');
+var Elokuvat = require('./models/elokuvat');
 var express = require('express');
 var router = express.Router();
 
@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mikan Express Page' });
 });
 
-User.find({ elokuvan_nimi: '28 Weeks Later' }, function(err, user) {
+Elokuvat.find({ elokuvan_nimi: '28 Weeks Later' }, function(err, user) {
   if (err) throw err;
 
   // object of the user
