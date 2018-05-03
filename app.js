@@ -67,7 +67,7 @@ db.connection.on("error", function() {
     console.log("error");
 });
 
-Get Mongoose to use the global promise library
+//Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 
 var p = new Promise( (resolve, reject) => {
