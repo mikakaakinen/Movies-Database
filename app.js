@@ -67,7 +67,17 @@ db.connection.on("error", function() {
     console.log("error");
 });
 
-// Get Mongoose to use the global promise library
-//mongoose.Promise = global.Promise;
+Get Mongoose to use the global promise library
+mongoose.Promise = global.Promise;
+
+var p = new Promise( (resolve, reject) => {
+    reject( Error("Error!") );
+  } );
+  
+  p.then(value => {console.log(value);});
+  
+  process.on('unhandledRejection', e => {
+    console.error(e);
+  });
 
 module.exports = app;
