@@ -43,32 +43,21 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//Import the mongoose module
-var mongoose = require("mongoose");
+//Set up mongoose connection
+var mongoose = require('mongoose');
+var mongoDB = 'mongodb://MikaKaakinen:o5lglNOWuF@ds014808.mlab.com:14808/elokuvat_database?authSource=admin';
+mongoose.connect(mongoDB);
+mongoose.Promise = global.Promise;
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-var database = {
-    url: "ds014808.mlab.com:14808",
-    name: "elokuvat_database",
-    user: "MikaKaakinen",
-    password: "o5lglNOWuF",
-};
-
-var loginCredentials = database.user + ":" + database.password;
-
-var db = mongoose;
-
-db.connect("mongodb://" + loginCredentials + "@" + database.url + "/" + database.name + "?authSource=elokuvat_database&w=1");
-
-db.connection.on("open", function() {
+db.on('open', function() {
     console.log("connection to database done!");
 });
 
-db.connection.on("error", function() {
+db.on("error", function() {
     console.log("error");
 });
-
-//Get Mongoose to use the global promise library
-mongoose.Promise = global.Promise;
 
 var promise1 = new Promise(function(resolve, reject) {
   throw 'Uh-oh!';
@@ -78,6 +67,5 @@ promise1.catch(function(error) {
   console.log(error);
 });
 // expected output: Uh-oh!
-
 
 module.exports = app;
