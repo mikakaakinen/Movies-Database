@@ -15,17 +15,27 @@ Elokuvat.find({ elokuvan_nimi: '28 Weeks Later' }, function(err, user) {
   console.log(user);
 });
 
-var result_from_mongo = [];
+// create a new user
+var newUser = Elokuvat({
+  elokuvan_nimi: "Jussi",
+  nayttelijat: "Kalle", 
+  genre: "Huumori",
+  kuva: "Tulee",
+  rotten_tomatoes_pisteet: "100",
+  sertifikaatti: "Tuore",
+  kuvaus: "OK",
+  oma_arvio: "Jee"
+});
+
+// save the user
+newUser.save(function(err) {
+  if (err) throw err;
+
+  console.log('User created!');
+});
 
 router.post('/', function(req, res, next) {
-var query = req.body.nimi_kentta; 
-db.collection("Elokuvat kokoelma").find(query).toArray(function(err, docs) {
-    if (err) throw err;
-    //Push result onto results_array
-    result_from_mongo.push(docs); 
-    // renders index.pug
-    res.render('index', {'results': 'Hey', title: 'Arin Express Page' });
-  });
+res.render('index', {title: 'Arin Express Page' });
 });
 
 module.exports = router;
