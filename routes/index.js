@@ -10,11 +10,11 @@ router.get('/', function(req, res, next) {
 
 // create a new user
 var newUser = Elokuvat({
-  elokuvan_nimi: "Jussi",
-  nayttelijat: "Kalle", 
+  elokuvan_nimi: "Pertti",
+  nayttelijat: ["Kalle", "Jussi"],
   genre: "Huumori",
   kuva: "Tulee",
-  rotten_tomatoes_pisteet: "100",
+  rotten_tomatoes_pisteet: 100,
   sertifikaatti: "Tuore",
   kuvaus: "OK",
   oma_arvio: "Jee"
