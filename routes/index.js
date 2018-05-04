@@ -8,13 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mikan Express Page' });
 });
 
-Elokuvat.find({ elokuvan_nimi: '28 Weeks Later' }, function(err, user) {
-  if (err) throw err;
-
-  // object of the user
-  console.log("'Movie found!'");
-});
-
 // create a new user
 var newUser = Elokuvat({
   elokuvan_nimi: "Jussi",
@@ -42,11 +35,10 @@ var query = req.body.nimi_kentta;
 // object of the user
 //res.render('index',docs);
 //});
-Elokuvat.find({}, function(err, users) {
-  if (err) throw err;
-
-  // object of all the users
-  console.log(users);
+Elokuvat.find({ elokuvan_nimi: query }, function(err, user) {
+if (err) throw err;
+// object of the user
+console.log(user);
 });
 });
 module.exports = router;
