@@ -4,8 +4,8 @@ block content
   h1= title
   p Welcome to #{title}
   form(action='/' method='post')
-  label(for='elokuvan_nimi') Sy&ouml;t&auml; elokuvan nimi: 
-  input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
-  input(type='submit' value='OK')
+    label(for='elokuvan_nimi') Sy&ouml;t&auml; elokuvan nimi: 
+    input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
+    input(type='submit' value='OK')
   h2= "Results from MongoDB:"
   h2 #{results} 
