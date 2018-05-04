@@ -1,5 +1,5 @@
 // if our user.js file is at app/models/user.js
-var Elokuvat = require('./models/elokuvat');
+var Elokuvat = require('../models/elokuvat');
 var express = require('express');
 var router = express.Router();
 
