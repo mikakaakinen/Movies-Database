@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 // create a new user
 var newUser = Elokuvat({
   Elokuvan_nimi: "Pertti",
-  Näyttelijät: ["Kalle", "Jussi"],
+  Nayttelijat: ["Kalle", "Jussi"],
   Genre: "Huumori",
   Kuva: "Tulee",
   Rotten_Tomatoes_pisteet: 100,

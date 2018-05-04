@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 // create a schema
 var elokuvatSchema = new Schema({
   Elokuvan_nimi: String,
-  Näyttelijät: Array,
+  Nayttelijat: Array,
   Genre: String,
   Kuva: String,
   Rotten_Tomatoes_pisteet: Number,
