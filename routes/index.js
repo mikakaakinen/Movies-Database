@@ -42,8 +42,11 @@ var query = req.body.nimi_kentta;
 // object of the user
 //res.render('index',docs);
 //});
-Elokuvat.find({}).toArray(function(err, results){
-console.log(results);
+Elokuvat.find({}, function(err, users) {
+  if (err) throw err;
+
+  // object of all the users
+  console.log(users);
 });
 });
 module.exports = router;
