@@ -38,7 +38,7 @@ var query = req.body.nimi_kentta;
 Elokuvat.find({}, function(err, user) {
 if (err) throw err;
 // object of the user
-console.log(user);
+res.render('index', {docs: user});
 });
 });
 module.exports = router;
