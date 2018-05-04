@@ -4,14 +4,14 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var elokuvatSchema = new Schema({
-  elokuvan_nimi: String,
-  nayttelijat: Array,
-  genre: String,
-  kuva: String,
-  rotten_tomatoes_pisteet: Number,
-  sertifikaatti: String,
-  kuvaus: String,
-  oma_arvio: String,
+  Elokuvan_nimi: String,
+  Näyttelijat: Array,
+  Genre: String,
+  Kuva: String,
+  Rotten_Tomatoes_pisteet: Number,
+  Sertifikaatti: String,
+  Kuvaus: String,
+  Oma_arvio: String,
 }, {
     collection: 'elokuvat_kokoelma'
 });
