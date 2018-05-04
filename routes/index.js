@@ -35,7 +35,7 @@ var query = req.body.nimi_kentta;
 // object of the user
 //res.render('index',docs);
 //});
-Elokuvat.find({Elokuvan_nimi:"28 Weeks Later"}, function(err, user) {
+Elokuvat.find({Elokuvan_nimi:query}, function(err, user) {
 if (err) throw err;
 // object of the user
 res.render('index', {docs: user});
