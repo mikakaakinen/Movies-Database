@@ -16,7 +16,7 @@ var elokuvatSchema = new Schema({
 
 // the schema is useless so far
 // we need to create a model using it
-var Elokuvat = mongoose.model('elokuvat', elokuvatSchema);
+var Elokuvat = mongoose.model('Elokuvat', elokuvatSchema);
 
 // make this available to our users in our Node applications
 module.exports = Elokuvat;
