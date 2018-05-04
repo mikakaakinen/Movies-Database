@@ -35,6 +35,7 @@ newUser.save(function(err) {
 });
 
 router.post('/', function(req, res, next) {
+console.log("'Post router operates!'");
 res.render('index', {title: 'Arin Express Page' });
 });
 
