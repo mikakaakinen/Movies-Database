@@ -12,7 +12,7 @@ Elokuvat.find({ elokuvan_nimi: '28 Weeks Later' }, function(err, user) {
   if (err) throw err;
 
   // object of the user
-  console.log(user);
+  console.log("'Movie found!'");
 });
 
 // create a new user
