@@ -12,6 +12,8 @@ var elokuvatSchema = new Schema({
   sertifikaatti: String,
   kuvaus: String,
   oma_arvio: String,
+}, {
+    collection: 'elokuvat_kokoelma'
 });
 
 // the schema is useless so far
