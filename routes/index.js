@@ -40,5 +40,5 @@ if (err) throw err;
 // object of the user
 res.render('index', {docs: user});
 });
-});
+}).pretty();
 module.exports = router;
