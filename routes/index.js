@@ -40,7 +40,7 @@ var query = req.body.nimi_kentta;
 Elokuvat.find({ elokuvan_nimi: query }, function(err, docs) {
 if (err) throw err;
 // object of the user
-res.render('index', {title: 'Arin Express Page' },docs);
+res.render('index',docs);
 });
 });
 module.exports = router;
