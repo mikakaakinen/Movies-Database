@@ -9,5 +9,5 @@ block content
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
   ul
-    for item in docs
-      li= item
+    each item in docs
+      li= #{item}
