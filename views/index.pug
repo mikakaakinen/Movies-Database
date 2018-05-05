@@ -8,5 +8,7 @@ block content
     input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
-  h2 #{docs} 
+  ul
+  each element in docs
+    li= element.name
   img(alt='One pixel transparent GIF' src='data:image/jpg;base64, docs.kuva ')
