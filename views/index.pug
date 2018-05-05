@@ -9,10 +9,10 @@ block content
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
   if docs.length
-         each item in docs
-          tr
-            td #{item['_id']}
-            td #{item['product_name']}
-            td #{item['price']}
-            td #{item['category']}
+    each item in docs
+      tr
+        td #{item['_id']}
+        td #{item['product_name']}
+        td #{item['price']}
+        td #{item['category']}
       
