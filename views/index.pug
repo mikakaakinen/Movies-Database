@@ -8,11 +8,11 @@ block content
     input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
-  if docs.length
-    each item in docs
-      tr
-        td #{item['_id']}
-        td #{item['product_name']}
-        td #{item['price']}
-        td #{item['category']}
+  if docs
+    each doc,i in docs
+    tr
+      td #{doc['_id']}
+      td #{doc['product_name']}
+      td #{doc['price']}
+      td #{doc['category']}
       
