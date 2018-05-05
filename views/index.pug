@@ -8,6 +8,7 @@ block content
     input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
-  p
-    each doc in docs && docs.username
+  each doc in docs
+    if doc !== void 0 && doc
       p= doc
+      
