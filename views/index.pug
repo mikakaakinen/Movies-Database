@@ -9,5 +9,5 @@ block content
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
   each doc in docs
-    each item in doc
-      p #{item}
+    p #{doc.name}
+     
