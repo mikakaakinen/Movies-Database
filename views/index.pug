@@ -9,6 +9,6 @@ block content
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
   ul
-  each element in docs
-    li= element.name
-  img(alt='One pixel transparent GIF' src='data:image/jpg;base64, docs.kuva ')
+    each doc in docs
+      li= doc
+  //img(alt='One pixel transparent GIF' src='data:image/jpg;base64, docs.kuva ')
