@@ -11,8 +11,8 @@ block content
   if docs
     each doc,i in docs
       tr
+        td #{doc['_id']}
         td #{doc['Elokuvan_nimi']}
         td #{doc['Nayttelijat']}
         td #{doc['Genre']}
-        td #{doc['Kuva']}
       
