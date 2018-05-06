@@ -42,6 +42,7 @@ exports.index = function(req, res){
     fs.readFile(
         path.join(__dirname, '../../public/images/Notting Hill.jpg'),
         function (err, data) {
+          if (err) throw err;
             res.render('index', {
                 src: data.toString('base64')
             });
