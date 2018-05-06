@@ -35,5 +35,17 @@ if (err) throw err;
 // object of the user
 res.render('index', {"docs": user});
 }));
+
+var fs = require('fs'), path = require('path');
+
+exports.index = function(req, res){
+    fs.readFile(
+        path.join(__dirname, '../public/images/query.jpg'),
+        function (err, data) {
+            res.render('index', {
+                src: data.toString('base64')
+            });
+    });
+};
 });
 module.exports = router;
