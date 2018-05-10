@@ -8,12 +8,9 @@ block content
     input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
     input(type='submit' value='OK')
   h2= "Results from MongoDB:"
-  if docs
-    each doc,i in docs
-      tr
-        td #{doc['_id']}
-        td #{doc['Elokuvan_nimi']}
-        td #{doc['Nayttelijat']}
-        td #{doc['Genre']}
+  #{doc['_id']}
+  #{doc['Elokuvan_nimi']}
+  #{doc['Nayttelijat']}
+  #{doc['Genre']}
   img(alt='Wikipedia', src="#{doc['Kuva']}")
       
