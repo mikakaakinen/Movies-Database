@@ -11,9 +11,9 @@ block content
   if docs
     each doc,i in docs
       tr
-        td doc['_id']
-        td doc['Elokuvan_nimi']
-        td doc['Nayttelijat']
-        td doc['Genre']
-        td img(alt='Wikipedia', src=doc['Kuva'])
+        td #{doc['_id']}
+        td #{doc['Elokuvan_nimi']}
+        td #{doc['Nayttelijat']}
+        td #{doc['Genre']}
+        td img(alt='Wikipedia', src=#{doc['Kuva']})
       
