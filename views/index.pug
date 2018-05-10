@@ -15,5 +15,6 @@ block content
         td #{doc['Elokuvan_nimi']}
         td #{doc['Nayttelijat']}
         td #{doc['Genre']}
-        td img(alt='Wikipedia', src='doc['Kuva']')
+  - var img = doc['Kuva']
+  img(alt='Wikipedia', src=img)
       
