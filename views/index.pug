@@ -15,4 +15,5 @@ block content
         td #{doc['Elokuvan_nimi']}
         td #{doc['Nayttelijat']}
         td #{doc['Genre']}
-    img(src='doc['Kuva']' alt='Elokuvan kuva')      
+      - url = 'doc['Kuva']'
+      img(src='url' alt='Elokuvan kuva')      
