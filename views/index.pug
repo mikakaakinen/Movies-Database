@@ -7,12 +7,14 @@ block content
     label(for='elokuvan_nimi') Sy&ouml;t&auml; elokuvan nimi: 
     input#elokuvan_nimi(type='text' name='nimi_kentta' value='Elokuvan nimi')
     input(type='submit' value='OK')
-  h2= "Results from MongoDB:"
+  h2 "Results from MongoDB:"
   if docs
     each doc in docs
       ul
-        li #{doc['_id']}
-        li #{docs['Elokuvan_nimi']}
-        li #{doc['Nayttelijat']}
-        li #{doc['Genre']}
-        img(alt='Elokuva' src=`${docs['Kuva']}`)  
+        li 
+          h3 Elokuvan nimi: #{doc['Elokuvan_nimi']}
+        li 
+          h3 Näyttelijät: #{doc['Nayttelijat']}
+        li 
+          h3 Genre: #{doc['Genre']}
+        img(alt='Elokuva' src=`${doc['Kuva']}`)  
