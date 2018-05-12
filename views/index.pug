@@ -12,9 +12,12 @@ block content
     each doc in docs
       ul
         li 
-          h3 Elokuvan nimi: #{doc['Elokuvan_nimi']}
+          h3 Elokuvan nimi: 
+          p #{doc['Elokuvan_nimi']}
         li 
-          h3 Näyttelijät: #{doc['Nayttelijat']}
+          h3 Näyttelijät: 
+          p #{doc['Nayttelijat']}
         li 
-          h3 Genre: #{doc['Genre']}
+          h3 Genre: 
+          p #{doc['Genre']}
         img(alt='Elokuva' src=`${doc['Kuva']}`)  
