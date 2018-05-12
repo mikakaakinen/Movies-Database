@@ -10,8 +10,8 @@ block content
   h2= "Results from MongoDB:"
   if docs
     ul
-      li #{docs['_id']}
-      li #{docs['Elokuvan_nimi']}
+      li docs['_id']
+      li docs['Elokuvan_nimi']
       li #{docs['Nayttelijat']}
       li #{docs['Genre']}
     img(alt='Elokuva' src=`${docs['Kuva']}`)  
