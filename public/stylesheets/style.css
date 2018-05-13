@@ -19,3 +19,21 @@ body {
 *::after {
     box-sizing: inherit;
 }
+
+/* Responsive typography */
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 16px;
+    }
+}
