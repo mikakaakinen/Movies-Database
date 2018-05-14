@@ -63,11 +63,6 @@ img {
   padding: 2rem 10% 2rem 10%;
 }
 
-.content {
-  color: #fff;
-  background-color: #000000;
-}
-
 /* Mobile view  */
 
 header {
@@ -244,5 +239,47 @@ ul.square {
   }
   .flex__item--2 {
       flex: 1 100%;
+  }
+}
+
+/* Color definition part begins */
+
+header {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+nav {
+  background-color: #FFF056;
+}
+
+.content {
+  color: #fff;
+  background-color: #000000;
+}
+
+nav ul li.nav__item a.nav__link {
+  color: #000000;
+}
+
+nav ul.children li.nav__item--sub a.nav__link--sub {
+  color: #000000;
+}
+
+/* Responsive typography */
+
+html {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+      font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+      font-size: 16px;
   }
 }
