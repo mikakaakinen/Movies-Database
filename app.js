@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var pug = require('pug');
 
 // Compile the source code
-var compiledFunction = pug.compileFile('layout.pug');
+var compiledFunction = pug.compileFile('views/layout.pug');
 
 var app = express();
 
