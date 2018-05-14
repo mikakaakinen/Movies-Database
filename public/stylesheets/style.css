@@ -1,40 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 100%;
-    box-sizing: border-box;
-}
-
 body {
-    width: 100%;
-    max-width: 70.0rem;
-    margin: 2rem auto;
-    background-color: blue;
+  padding: 200px 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-/* Responsive typography */
-
-html {
-    font-size: 10px;
-}
-
-@media screen and (min-width: 320px) {
-    html {
-        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    html {
-        font-size: 16px;
-    }
+a {
+  color: #00B7FF;
 }
