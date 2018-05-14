@@ -1,4 +1,8 @@
-header
+extends layout
+
+block content
+  
+  header
   .logo
     .photo
       img(src='images/e_9thumb.jpg' alt='Eddie Vedder' height='100' width='73')
@@ -99,4 +103,4 @@ main
                 h3 Oma arvio
                 p #{doc['Oma_arvio']}
             .flex__item--2
-              img(alt='Elokuva' src=`${doc['Kuva']}`)
+              img(alt='Elokuva' src=`${doc['Kuva']}`)  
