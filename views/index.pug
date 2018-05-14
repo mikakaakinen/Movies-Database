@@ -80,27 +80,27 @@ block content
           h2 Tulokset tietokannasta
           if docs
             each doc in docs
-            ul
-              li
-                h3 Elokuvan nimi
-                p #{doc['Elokuvan_nimi']}
-              li
-                h3 N&auml;yttelij&auml;t
-                p #{doc['Nayttelijat']}
-              li
-                h3 Genre
-                p #{doc['Genre']}
-              li
-                h3 Rotten Tomatoes pisteet
-                p #{doc['Rotten_Tomatoes_pisteet']}
-              li
-                h3 Sertifikaatti
-                p #{doc['Sertifikaatti']}
-              li
-                h3 Kuvaus
-                p #{doc['Kuvaus']}
-              li
-                h3 Oma arvio
-                p #{doc['Oma_arvio']}
+              ul
+                li
+                  h3 Elokuvan nimi
+                  p #{doc['Elokuvan_nimi']}
+                li
+                  h3 N&auml;yttelij&auml;t
+                  p #{doc['Nayttelijat']}
+                li
+                  h3 Genre
+                  p #{doc['Genre']}
+                li
+                  h3 Rotten Tomatoes pisteet
+                  p #{doc['Rotten_Tomatoes_pisteet']}
+                li
+                  h3 Sertifikaatti
+                  p #{doc['Sertifikaatti']}
+                li
+                  h3 Kuvaus
+                  p #{doc['Kuvaus']}
+                li
+                  h3 Oma arvio
+                  p #{doc['Oma_arvio']}
             .flex__item--2
               img(alt='Elokuva' src=`${doc['Kuva']}`) 
