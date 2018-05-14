@@ -65,8 +65,8 @@ img {
 
 li {
   list-style-type: circle;
-  list-style-position: outside;
-  color: rgb(247, 238, 238);
+  list-style-position: inside;
+  color: #FFFFFF;
  }
 
 /* Mobile view  */
