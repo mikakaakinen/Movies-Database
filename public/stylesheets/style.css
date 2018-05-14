@@ -63,12 +63,6 @@ img {
   padding: 2rem 10% 2rem 10%;
 }
 
-li {
-  list-style-type: circle;
-  list-style-position: inside;
-  color: #FFFFFF;
- }
-
 /* Mobile view  */
 
 header {
@@ -85,16 +79,6 @@ header nav ul {
   background-color: #FFF056;
   display: none;
   flex: 1;
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul.square {
-  list-style-type: square;
-  list-style-position: inside;
-  color: #FFFFFF;
 }
 
 .nav__item {
