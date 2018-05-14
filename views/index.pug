@@ -67,19 +67,19 @@ block content
           li.nav__item--sub
             a.nav__link--sub(href='../italian') IT
   main
-  .content
-    h1 Tervetuloa Hyv&auml;t elokuvat- tietokantaan 
-    h2 Alla n&auml;et kaikki ne elokuvat, joita voit hakea tietokannasta
-    h3 28 Weeks Later, Notting Hill
-    form(action='/' method='post')
-      label(for='elokuvan nimi') Sy&ouml;t&auml; elokuvan nimi
-      input(type='text' name='nimi_kentta' id='elokuvan nimi' value='Elokuvan nimi')
-      input(type='submit' value='Lähetä')
-    .flex__container
-      .flex__item--1
-        h2 Tulokset tietokannasta
-        if docs
-          each doc in docs
+    .content
+      h1 Tervetuloa Hyv&auml;t elokuvat- tietokantaan 
+      h2 Alla n&auml;et kaikki ne elokuvat, joita voit hakea tietokannasta
+      h3 28 Weeks Later, Notting Hill
+      form(action='/' method='post')
+        label(for='elokuvan nimi') Sy&ouml;t&auml; elokuvan nimi
+        input(type='text' name='nimi_kentta' id='elokuvan nimi' value='Elokuvan nimi')
+        input(type='submit' value='Lähetä')
+      .flex__container
+        .flex__item--1
+          h2 Tulokset tietokannasta
+          if docs
+            each doc in docs
             ul
               li
                 h3 Elokuvan nimi
