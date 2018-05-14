@@ -32,6 +32,13 @@ body {
   width: 100%;
 }
 
+.content {
+  opacity: 0.90;
+  filter: opacity(90%);
+  -ms-filter: "progid : DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  padding: 2rem 10% 2rem 10%;
+}
+
 a {
   color: #00B7FF;
 }
