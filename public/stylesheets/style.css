@@ -236,6 +236,35 @@ ul {
   }
 }
 
+form {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+form .form-control::-moz-placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+}
+
+form .form-control:-ms-input-placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+}
+
+form .form-control::-webkit-input-placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="submit"] {
+  height: 4.0rem;
+  font-size: 1.5rem;
+}
+
 /* Color definition part begins */
 
 header {
