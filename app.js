@@ -4,6 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var pug = require('pug');
+
+// Compile the source code
+var compiledFunction = pug.compileFile('layout.pug');
 
 var app = express();
 
