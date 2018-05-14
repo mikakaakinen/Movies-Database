@@ -103,4 +103,5 @@ block content
                   h3 Oma arvio
                   p #{doc['Oma_arvio']}
         .flex__item--2
-          img(alt='Elokuva' src=`${doc['Kuva']}`)       
+          if docs
+            img(alt='Elokuva' src=`${doc['Kuva']}`)       
