@@ -322,6 +322,12 @@ input[type="text"] {
   box-shadow: #FFFFFF 2px 2px 4px;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 label {
   display: block;
   color: #FFFFFF;
