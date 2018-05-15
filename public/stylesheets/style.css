@@ -288,6 +288,7 @@ input[type="text"],
 input[type="submit"] {
   height: 2.5rem;
   font-size: 1.4rem;
+  padding: 0 1rem;
 }
 
 input[type="text"] {
