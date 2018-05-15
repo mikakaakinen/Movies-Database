@@ -63,6 +63,14 @@ img {
   padding: 2rem 10% 2rem 10%;
 }
 
+.text-top {
+  margin-top: 2.5rem;
+}
+
+.text-bottom {
+  margin-bottom: 2.5rem;
+}
+
 /* Mobile view  */
 
 header {
