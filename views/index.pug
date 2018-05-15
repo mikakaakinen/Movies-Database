@@ -71,17 +71,17 @@ block content
       h2 Tervetuloa Hyv&auml;t elokuvat- tietokantaan 
       h3 Alla n&auml;et kaikki ne elokuvat, joita voit hakea tietokannasta
       p 28 Weeks Later, Notting Hill
-      form(action='/' method='post')
-        label.text-top.text-bottom(for='elokuvan nimi') Sy&ouml;t&auml; elokuvan nimi
+      form.text-top(action='/' method='post')
+        label(for='elokuvan nimi') Sy&ouml;t&auml; elokuvan nimi:
         input(type='text' name='nimi_kentta' id='elokuvan nimi' value='Elokuvan nimi')
         input(type='submit' value='Lähetä')
       .flex__container
         if docs
           each doc in docs
             .flex__item--1
-              h2.text-top.text.bottom Tulokset tietokannasta
+              h2.text-top.text-bottom Tulokset tietokannasta
               h2 Elokuvan nimi
-              p #{doc['Elokuvan_nimi']}
+              p.text-center #{doc['Elokuvan_nimi']}
               h2 N&auml;yttelij&auml;t
               p #{doc['Nayttelijat']}
               h2 Genre
