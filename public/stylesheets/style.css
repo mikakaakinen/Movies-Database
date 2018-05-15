@@ -81,7 +81,7 @@ img {
 }
 
 .b-r-u-2 {
-  color: #F03434;
+  color: #FF0000;
   text-decoration: underline;
 }
 
@@ -284,6 +284,10 @@ input[type="text"],
 input[type="submit"] {
   height: 2.5rem;
   font-size: 1.4rem;
+}
+
+input[type="text"]{
+  margin-right: 1.5rem;
 }
 
 label {
