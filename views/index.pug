@@ -80,11 +80,11 @@ block content
         label(for='elokuvan nimi') Sy&ouml;t&auml; elokuvan nimi:
         input(type='text' name='nimi_kentta' id='elokuvan nimi' value='Elokuvan nimi')
         input(type='submit' value='Lähetä')
-      .flex__container
-        if docs
-          h2.text-top.text-bottom.b-r-u-2 Tulokset tietokannasta
+      if docs
+        h2.text-top.text-bottom.b-r-u-2 Tulokset tietokannasta
+        .flex__container
           each doc in docs
-            .flex__item--1.text-top
+            .flex__item--1
               h3.b-r-u-1 Elokuvan nimi
               p.text-center #{doc['Elokuvan_nimi']}
               h3.b-r-u-1 Ohjaaja
