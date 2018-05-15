@@ -297,7 +297,7 @@ input[type="text"] {
 .imagegallery {
   list-style-image: initial;
   list-style-position: initial;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .imagegallery li {
