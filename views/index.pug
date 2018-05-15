@@ -81,8 +81,8 @@ block content
         input(type='text' name='nimi_kentta' id='elokuvan nimi' value='Elokuvan nimi')
         input(type='submit' value='Lähetä')
       .flex__container
-        h2.text-top.text-bottom.b-r-u-2 Tulokset tietokannasta
         if docs
+          h2.text-top.text-bottom.b-r-u-2 Tulokset tietokannasta
           each doc in docs
             .flex__item--1
               h3.b-r-u-1 Elokuvan nimi
