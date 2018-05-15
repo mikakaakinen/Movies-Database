@@ -79,20 +79,20 @@ block content
         if docs
           each doc in docs
             .flex__item--1
-              h2.text-top.text-bottom.b-r-u-1 Tulokset tietokannasta
-              h2.b-r-u-1 Elokuvan nimi
+              h2.text-top.text-bottom.b-r-u-2 Tulokset tietokannasta
+              h3.b-r-u-1 Elokuvan nimi
               p.text-center #{doc['Elokuvan_nimi']}
-              h2.b-r-u-1 N&auml;yttelij&auml;t
+              h3.b-r-u-1 N&auml;yttelij&auml;t
               p.text-center #{doc['Nayttelijat']}
-              h2.b-r-u-1 Genre
+              h3.b-r-u-1 Genre
               p.text-center #{doc['Genre']}
-              h2.b-r-u-1 Rotten Tomatoes pisteet
+              h3.b-r-u-1 Rotten Tomatoes pisteet
               p.text-center #{doc['Rotten_Tomatoes_pisteet']}
-              h2.b-r-u-1 Sertifikaatti
+              h3.b-r-u-1 Sertifikaatti
               p.text-center #{doc['Sertifikaatti']}
-              h2.b-r-u-1 Kuvaus
+              h3.b-r-u-1 Kuvaus
               p.text-center #{doc['Kuvaus']}
-              h2.b-r-u-1 Oma arvio
+              h3.b-r-u-1 Oma arvio
               p.text-center #{doc['Oma_arvio']}
             .flex__item--2
               img(alt='Elokuva' src=`${doc['Kuva']}`)   

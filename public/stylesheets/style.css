@@ -68,15 +68,20 @@ img {
 }
 
 .text-top {
-  margin-top: 2.0rem;
+  margin-top: 1.5rem;
 }
 
 .text-bottom {
-  margin-bottom: 2.0rem;
+  margin-bottom: 1.5rem;
 }
 
 .b-r-u-1 {
   color: #FF0000;
+  text-decoration: underline;
+}
+
+.b-r-u-2 {
+  color: #FF9999;
   text-decoration: underline;
 }
 
@@ -315,7 +320,7 @@ nav ul.children li.nav__item--sub a.nav__link--sub {
 
 body {
   font-family: Quicksand, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
