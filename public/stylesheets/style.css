@@ -130,7 +130,7 @@ ul {
 }
 
 .nav__item:hover i {
-  color: #FF0000;
+  color: #000000;
 }
 
 .nav__item i {
@@ -200,7 +200,7 @@ ul {
 }
 
 #navToggle:hover>a {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 /* Desktop screens */
