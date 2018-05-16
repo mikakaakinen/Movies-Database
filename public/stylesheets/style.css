@@ -8,6 +8,9 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   background-image: url('https://mika-kaakinen-bucket.s3.eu-west-2.amazonaws.com/bg_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 body {
@@ -57,9 +60,8 @@ img {
 }
 
 .content {
-  background-color: #DFE2DB; 
-  color: #000000; 
-  
+  background-color: #DFE2DB;
+  color: #000000;
   padding: 2rem 5% 2rem 5%;
 }
 
