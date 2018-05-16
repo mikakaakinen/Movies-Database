@@ -28,10 +28,10 @@ body {
   justify-content: space-between;
   background-color: #DFE2DB;
   color: #000000;
+  padding: 2rem;
 }
 
 .flex__item--1 {
-  padding: 2rem;
   flex: 1 50%;
 }
 
