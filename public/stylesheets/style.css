@@ -27,8 +27,6 @@ body {
   align-items: stretch;
   justify-content: space-between;
   padding: 2rem 2rem 0 2rem;
-  background-color: #DFE2DB;
-  color: #000000;
 }
 
 .flex__item--1 {
@@ -58,13 +56,6 @@ img {
 }
 
 .content {
-  opacity: 0.90;
-  filter: opacity(90%);
-  -ms-filter: "progid : DXImageTransform.Microsoft.Alpha(Opacity=90)";
-  padding: 2rem 5% 2rem 5%;
-}
-
-.content-grey {
   background-color: #DFE2DB;
   color: #000000;
   padding: 2rem 5% 2rem 5%;

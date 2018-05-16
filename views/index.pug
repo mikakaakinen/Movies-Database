@@ -65,7 +65,7 @@ block content
             li.nav__item--sub
               a.nav__link--sub(href='http://www.mikakaakinen.fi/italian/#/anand') IT
   main
-    .content.clearfix
+    .content
       h2 Tervetuloa Hyv&auml;t elokuvat- tietokantaan 
       h3 Alla n&auml;et kaikki ne elokuvat, joita voit hakea tietokannasta
       .imagegallery.clearfix
@@ -101,9 +101,7 @@ block content
               p.text-center #{doc['Kuvaus']}
             .flex__item--2
               img.border(alt='Elokuva' src=`${doc['Kuva']}`)   
-    .content
-      if docs
-        .flex__container
-          h3.b-r-u-1 Oma arvio
-          each doc in docs
-            p #{doc['Oma_arvio']}
+    if docs
+      h3.b-r-u-1 Oma arvio
+      each doc in docs
+        p #{doc['Oma_arvio']}
