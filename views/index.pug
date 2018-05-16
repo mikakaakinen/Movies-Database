@@ -101,5 +101,6 @@ block content
               p.text-center #{doc['Kuvaus']}
             .flex__item--2.text-top
               img.border(alt='Elokuva' src=`${doc['Kuva']}`)   
+      if docs
         h3.text-center.b-r-u-1 Oma arvio
-            p #{doc['Oma_arvio']}
+        p #{doc['Oma_arvio']}
