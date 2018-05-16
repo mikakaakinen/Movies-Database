@@ -26,17 +26,16 @@ body {
   flex-flow: row wrap;
   align-items: stretch;
   justify-content: space-between;
-}
-
-.flex__item--1 {
-  padding: 1rem;
-  flex: 1 50%;
   background-color: #DFE2DB;
   color: #000000;
 }
 
+.flex__item--1 {
+  padding: 2rem;
+  flex: 1 50%;
+}
+
 .flex__item--2 {
-  padding: 0 0 0 1rem;
   flex: 1 50%;
 }
 
