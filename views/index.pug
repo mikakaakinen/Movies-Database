@@ -99,10 +99,10 @@ block content
               p.text-center #{doc['Sertifikaatti']}
               h3.b-r-u-1 Kuvaus
               p.text-center #{doc['Kuvaus']}
-            .flex__item--2.text-top
+            .flex__item--2
               img.border(alt='Elokuva' src=`${doc['Kuva']}`)   
       if docs
+        h3.text-center.b-r-u-1 Oma arvio
         .flex__container
-          h3.text-center.b-r-u-1 Oma arvio
           each doc in docs
             p #{doc['Oma_arvio']}
