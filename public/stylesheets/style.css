@@ -26,8 +26,6 @@ body {
   flex-flow: row wrap;
   align-items: stretch;
   justify-content: space-between;
-  background-color: #DFE2DB;
-  color: #000000;
   padding: 2rem 2rem 0 2rem;
 }
 
@@ -61,7 +59,13 @@ img {
   opacity: 0.90;
   filter: opacity(90%);
   -ms-filter: "progid : DXImageTransform.Microsoft.Alpha(Opacity=90)";
-  padding: 2rem 10% 2rem 10%;
+  padding: 2rem 5% 2rem 5%;
+}
+
+.content__grey {
+  background-color: #DFE2DB;
+  color: #000000;
+  padding: 2rem 5% 2rem 5%;
 }
 
 .text-center {
