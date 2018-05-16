@@ -121,12 +121,12 @@ ul {
 
 .nav__item:hover {
   color: #FFFFFF;
-  background-color: #FFC756;
+  background-color: #7995F2;
 }
 
 .nav__item--sub:hover {
   color: #FFFFFF;
-  background-color: #FFC756;
+  background-color: #7995F2;
 }
 
 .nav__item:hover i {
@@ -186,7 +186,7 @@ ul {
 }
 
 #navToggle:hover {
-  background-color: #1F3A93;
+  background-color: #7995F2;
   cursor: pointer;
 }
 
