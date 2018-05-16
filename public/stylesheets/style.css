@@ -28,7 +28,7 @@ body {
   justify-content: space-between;
   background-color: #DFE2DB;
   color: #000000;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .flex__item--1 {
@@ -69,11 +69,11 @@ img {
 }
 
 .text-top {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .text-bottom {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .b-r-u-1 {
