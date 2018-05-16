@@ -79,7 +79,6 @@ img {
 /* Mobile view  */
 
 header {
-  background-color: #191919;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -320,7 +319,7 @@ label {
 
 header {
   color: #FFFFFF;
-  background-color: #000000;
+  background-color: #0027A8;
 }
 
 nav {
