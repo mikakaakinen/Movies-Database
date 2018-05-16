@@ -69,7 +69,7 @@ img {
 }
 
 .b-r-u-1 {
-  color: #F22613;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
@@ -334,8 +334,8 @@ nav {
 }
 
 .content {
-  color: #000000;
-  background-color: #002451;
+  color: #FFFFFF;
+  background-color: #446CB3;
 }
 
 nav ul li.nav__item a.nav__link {
