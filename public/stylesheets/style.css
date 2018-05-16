@@ -13,15 +13,7 @@ body {
   width: 100%;
   max-width: 70.0rem;
   margin: 2rem auto;
-  background-image: url('https://mika-kaakinen-bucket.s3.eu-west-2.amazonaws.com/bg_1.jpg');
-  position: relative;
-  /* Full height and width*/
-  /* width: 100%;*/
-  /*height: 100vh;/*
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #DFDFEB;
 }
 
 *,
@@ -54,21 +46,8 @@ img {
   background-color: #FFFFFF;
 }
 
-.bg {
-  height: auto;
-  left: 0;
-  min-height: 100%;
-  min-width: 1200px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .content {
-  background-color: #FFFFFF;
-  color: #000000;
   padding: 2rem 5% 2rem 5%;
-  position: absolute;
 }
 
 .text-center {
@@ -331,12 +310,6 @@ input[type="text"] {
   box-shadow: #FFFFFF 2px 2px 4px;
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 label {
   display: block;
   color: #FFFFFF;
@@ -355,8 +328,8 @@ nav {
 }
 
 .content {
-  color: #fff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #AFAFDE;
 }
 
 nav ul li.nav__item a.nav__link {
