@@ -56,8 +56,11 @@ img {
 }
 
 .content {
-  background-color: #DFE2DB;
-  color: #000000;
+  /* background-color: #DFE2DB; */
+  /* color: #000000; */
+  opacity: 0.90;
+  filter: opacity(90%);
+  -ms-filter: "progid : DXImageTransform.Microsoft.Alpha(Opacity=90)";
   padding: 2rem 5% 2rem 5%;
 }
 
