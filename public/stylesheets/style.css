@@ -11,13 +11,13 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 body {
   width: 100%;
   max-width: 70.0rem;
   margin: 2rem auto;
-  position: relative;
 }
 
 *,
@@ -61,7 +61,7 @@ img {
 }
 
 .content {
-  background-color: #DFE2DB;
+  background-color: #FFFFFF;
   color: #000000;
   padding: 2rem 5% 2rem 5%;
   position: absolute;
