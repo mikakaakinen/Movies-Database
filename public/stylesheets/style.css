@@ -339,11 +339,11 @@ nav {
 }
 
 nav ul li.nav__item a.nav__link {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 nav ul.children li.nav__item--sub a.nav__link--sub {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 /* Typography definition part begins */
@@ -374,7 +374,7 @@ h2 {
   font-family: Open Sans;
   font-size: 1.8rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: 700;
 }
 
@@ -382,7 +382,7 @@ h3 {
   font-family: Open Sans;
   font-size: 1.5rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: 700;
 }
 
