@@ -58,9 +58,7 @@ img {
 .content {
   background-color: #DFE2DB; 
   color: #000000; 
-  opacity: 0.10;
-  filter: opacity(10%);
-  -ms-filter: "progid : DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  
   padding: 2rem 5% 2rem 5%;
 }
 
