@@ -102,7 +102,7 @@ block content
             .flex__item--2
               img.border(alt='Elokuva' src=`${doc['Kuva']}`)   
       if docs
-        .flex__container
-          h3.text-center Oma arvio
+        .flex__container.text-bottom
           each doc in docs
+            h3.b-r-u-1 Oma arvio
             p #{doc['Oma_arvio']}
