@@ -13,7 +13,7 @@ body {
   width: 100%;
   max-width: 70.0rem;
   margin: 2rem auto;
-  background-color: #DFDFEB;
+  background-color: #F2F2F2;
 }
 
 *,
@@ -95,7 +95,7 @@ header {
 }
 
 header nav ul {
-  background-color: #FFF056;
+  background-color: #1F3A93;
   display: none;
   flex: 1;
 }
@@ -144,7 +144,7 @@ ul {
 }
 
 .children {
-  background-color: #FFF056;
+  background-color: #1F3A93;
   border-radius: 1.5rem;
   display: none;
   overflow: hidden;
@@ -192,7 +192,7 @@ ul {
 }
 
 #navToggle:hover {
-  background-color: #FFF056;
+  background-color: #1F3A93;
   cursor: pointer;
 }
 
@@ -220,7 +220,7 @@ ul {
   }
   nav {
     display: block;
-    background-color: #FFF056;
+    background-color: #1F3A93;
   }
   header>nav>ul {
     display: flex !important;
@@ -233,7 +233,7 @@ ul {
   }
   .children {
     display: none;
-    background-color: #FFF056;
+    background-color: #1F3A93;
     border-radius: 1.5rem;
     position: absolute;
     line-height: 4rem;
@@ -330,12 +330,12 @@ header {
 }
 
 nav {
-  background-color: #FFF056;
+  background-color: #1F3A93;
 }
 
 .content {
-  color: #FFFFFF;
-  background-color: #446CB3;
+  color: #000000;
+  background-color: #DADFF2;
 }
 
 nav ul li.nav__item a.nav__link {
