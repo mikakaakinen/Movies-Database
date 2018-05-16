@@ -8,10 +8,14 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   background-image: url('https://mika-kaakinen-bucket.s3.eu-west-2.amazonaws.com/bg_1.jpg');
+  position: relative;
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 body {
