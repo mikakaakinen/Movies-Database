@@ -69,12 +69,6 @@ img {
 }
 
 .b-r-u-1 {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.b-r-u-2 {
-  color: #FF0000;
   text-decoration: underline;
 }
 
@@ -318,7 +312,7 @@ input[type="text"] {
 
 label {
   display: block;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 1.4rem;
 }
 
