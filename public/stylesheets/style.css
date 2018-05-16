@@ -11,6 +11,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: fixed;
 }
 
 body {
@@ -63,6 +64,8 @@ img {
   background-color: #DFE2DB;
   color: #000000;
   padding: 2rem 5% 2rem 5%;
+  position: relative;
+  z-index: 100;
 }
 
 .text-center {
