@@ -46,6 +46,12 @@ img {
   background-color: #FFFFFF;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .content {
   padding: 2rem 5% 2rem 5%;
 }
