@@ -7,6 +7,12 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 70.0rem;
+  margin: 2rem auto;
   background-image: url('https://mika-kaakinen-bucket.s3.eu-west-2.amazonaws.com/bg_1.jpg');
   position: relative;
   /* Full height and width*/
@@ -16,12 +22,6 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-body {
-  width: 100%;
-  max-width: 70.0rem;
-  margin: 2rem auto;
 }
 
 *,
