@@ -27,6 +27,8 @@ body {
   align-items: stretch;
   justify-content: space-between;
   padding: 2rem 2rem 0 2rem;
+  background-color: #DFE2DB;
+  color: #000000;
 }
 
 .flex__item--1 {
