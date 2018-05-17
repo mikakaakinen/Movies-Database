@@ -38,10 +38,11 @@ body {
 }
 
 img {
-  
+  width: auto;
+  max-width: 100%;
+  height: auto;
   color: #000000;
   background-color: #FFFFFF;
-  margin: 2rem 0 0 2rem;
 }
 
 .clearfix:after {
@@ -64,6 +65,10 @@ img {
 
 .text-bottom {
   margin-bottom: 2rem;
+}
+
+.text-left {
+  margin-left: 2rem;
 }
 
 .b-r-u-1 {
