@@ -27,7 +27,6 @@ body {
   flex-flow: row wrap;
   align-items: stretch;
   justify-content: space-between;
-  padding: 2rem 2rem 0 2rem;
 }
 
 .flex__item--1 {
