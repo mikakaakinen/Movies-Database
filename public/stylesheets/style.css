@@ -88,7 +88,7 @@ header {
 }
 
 header nav ul {
-  background-color: #1F3A93;
+  background-color: #2C53D2;
   display: none;
   flex: 1;
 }
@@ -137,7 +137,7 @@ ul {
 }
 
 .children {
-  background-color: #1F3A93;
+  background-color: #2C53D2;
   border-radius: 1.5rem;
   display: none;
   overflow: hidden;
@@ -213,7 +213,7 @@ ul {
   }
   nav {
     display: block;
-    background-color: #1F3A93;
+    background-color: #2C53D2;
   }
   header>nav>ul {
     display: flex !important;
@@ -226,7 +226,7 @@ ul {
   }
   .children {
     display: none;
-    background-color: #1F3A93;
+    background-color: #2C53D2;
     border-radius: 1.5rem;
     position: absolute;
     line-height: 4rem;
@@ -319,11 +319,11 @@ label {
 
 header {
   color: #FFFFFF;
-  background-color: #2c53d2;
+  background-color: #1F3A93;
 }
 
 nav {
-  background-color: #1F3A93;
+  background-color: #2C53D2;
 }
 
 .content {
