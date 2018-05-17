@@ -216,7 +216,6 @@ ul {
   }
   nav {
     display: block;
-    background-color: #2C53D2;
   }
   header>nav>ul {
     display: flex !important;
